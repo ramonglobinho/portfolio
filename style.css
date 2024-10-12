@@ -1,4 +1,7 @@
 p {
     font-style: italic;
     line-height: 25px;
+    text-align: justify;
+    width: 50%;
+    text-indent: 5em;
 }
