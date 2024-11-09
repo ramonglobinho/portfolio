@@ -1,3 +1,61 @@
+<<<<<<< HEAD
+p {
+    font-style: italic;
+    line-height: 25px;
+    text-align: justify;
+    width: 50%;
+    text-indent: 5em;
+    margin: 10px auto;
+    padding: 1%;
+    border: 5px solid black;
+    border-radius: 30px 5px;
+}
+
+.fis, .mat{
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.divisao{
+    background-image: url('IMG/programing.jpg');
+    background-attachment: fixed;
+    padding: 50px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.divisao h2{
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.menu_topo{
+    display: inline;
+}
+
+.principal{
+    padding-top: 5px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.lista_horizontal{
+    display: flex; /* Adicionado para alinhar horizontalmente */
+    gap: 20px; /* Espaço entre as listas */
+    margin: 0 auto;
+
+}
+
+
+
+
+  
+=======
 p {
     font-style: italic;
     line-height: 25px;
@@ -41,3 +99,4 @@ p {
 .menu_topo{
     display: inline;
 }
+>>>>>>> c3bb2db5d824d0db616e5ada2e6f54cd1d59fb80
