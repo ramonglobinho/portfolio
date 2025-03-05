@@ -1,3 +1,11 @@
+/*
+https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
+ffffff
+e5e5e5
+fca311
+14213d
+000000 */
+
 p {
     font-style: italic;
     line-height: 25px;
@@ -33,19 +41,44 @@ p {
     text-align: center;
 }
 
-.menu_topo{
-    display: inline;
+body{
+    margin-top: 0;
+}
+
+.menu-topo{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e5e5e5;
+    padding: 6px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu-topo a:hover{
+    border-bottom: 1px dotted; /* Adiciona um sublinhado pontilhado */
+    padding-bottom: 2px; /* Ajusta o espaçamento entre o texto e o sublinhado */
 }
 
 .principal{
-    padding-top: 5px;
+    padding-top: 30px;
     width: 80%;
-    margin: 10px auto;
+    margin: auto;
 }
 
 .lista_horizontal{
     display: flex; /* Adicionado para alinhar horizontalmente */
     gap: 20px; /* Espaço entre as listas */
     margin: 0 auto;
+
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;   
 
 }
