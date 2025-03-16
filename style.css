@@ -6,16 +6,27 @@ fca311
 14213d
 000000 */
 
-p {
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+    margin-bottom: 5%;
+}
+
+.principal p {
     font-style: italic;
     line-height: 25px;
     text-align: justify;
-    width: 70%;
     text-indent: 5em;
-    margin: 10px auto;
     padding: 1%;
     border: 5px solid black;
     border-radius: 30px 5px;
+    margin-top: 0%;
+}
+
+.principal img{
+    width: 60%;
+    justify-self: center;
 }
 
 .fis, .mat{
@@ -30,15 +41,20 @@ p {
     padding: 50px 0;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex; /* Ativa o layout flexível no contêiner */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 
 }
 
 .divisao h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     width: 300px;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 20px;
-    text-align: center;
 }
 
 body{
@@ -51,8 +67,34 @@ body{
     background-color: #e5e5e5;
     padding: 6px;
     position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
+    border-top: 30px solid white;
+
+}
+
+.menu-topo.open {
+    display: flex;
+}
+
+/* small view navigation */
+#menu-top {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu-top::before {
+	content: "☰";
+}
+
+#menu-top.open::before {
+	content: "❌";
 }
 
 a{
@@ -65,13 +107,6 @@ a{
     padding-bottom: 2px; /* Ajusta o espaçamento entre o texto e o sublinhado */
 }
 
-.principal{
-    padding-top: 30px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 2%;
-}
-
 .lista_horizontal{
     display: flex; /* Adicionado para alinhar horizontalmente */
     gap: 20px; /* Espaço entre as listas */
@@ -82,11 +117,50 @@ a{
 
 h1{
     text-align: center;
-    padding-top: 10px;   
+    padding-top: 70px;   
 
 }
 
 .modific{
     font-size: smaller;
     text-align: center;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu-top {
+		display: none; /* hide hamburger button */
+        
+	}
+
+	.menu-topo {
+		flex-direction: row;
+	}
+
+	.menu-topo a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
 }

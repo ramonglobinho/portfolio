@@ -11,3 +11,12 @@ let minutos = modificado.getMinutes().toString().padStart(2, '0');
 let dataFormatada = `${dia}/${mes}/${ano} ${horas}:${minutos}`;
 
 document.getElementById('data').textContent = dataFormatada
+
+
+const hamButton = document.querySelector('#menu-top');
+const navigation = document.querySelector('.menu-topo');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
