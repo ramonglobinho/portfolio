@@ -8,7 +8,7 @@ fca311
 
 .principal{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     padding: 30px;
     margin-bottom: 5%;
 }
@@ -61,20 +61,20 @@ body{
     margin-top: 0;
 }
 
-.menu-topo{
-    display: flex;
-    justify-content: space-around;
+.menu-topo {
+    display: none; /* Esconde o menu por padrão */
+    flex-direction: column;
+    text-align: center;
     background-color: #e5e5e5;
-    padding: 6px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-top: 30px solid white;
-
+    position: relative;
+    top: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1rem auto;
 }
 
-.menu-topo.open {
+
+.menu-topo.active {
     display: flex;
 }
 
@@ -85,15 +85,14 @@ body{
 	background: none;
 	color: #000;
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+
 }
 
 #menu-top::before {
-	content: "☰";
+    content: "☰";
 }
 
-#menu-top.open::before {
+#menu-top.active::before {
 	content: "❌";
 }
 
@@ -127,18 +126,15 @@ h1{
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
-}
-
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+.menu-topo.active {
+    display: flex;
 }
 
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
-	h1 {
+    
+    h1 {
 		font-size: 2.5rem;
 		margin-left: 0;
 		text-align: center;
@@ -154,13 +150,52 @@ h1{
         
 	}
 
-	.menu-topo {
-		flex-direction: row;
-	}
+	.menu-topo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #e5e5e5;
+        padding: 6px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 20px solid white;
+        margin-top: 0;
+        
+
+    
+    }
 
 	.menu-topo a {
 		display: block;
-		flex: 1 1 100%;
+		flex: 1 1 auto ;
 	}
+
+    .principal{
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       grid-template-rows: 1fr;
+
+
+    }
+
+    .principal p {
+        font-style: italic;
+        line-height: 25px;
+        text-align: justify;
+        text-indent: 5em;
+        padding: 1%;
+        border: 5px solid black;
+        border-radius: 30px 5px;
+        margin-top: 0%;
+    }
+    
+    .principal img{
+        width: 60%;
+        justify-self: center;
+        object-fit: contain;
+
+    }
 
 }

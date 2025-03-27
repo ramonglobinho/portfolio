@@ -13,10 +13,13 @@ let dataFormatada = `${dia}/${mes}/${ano} ${horas}:${minutos}`;
 document.getElementById('data').textContent = dataFormatada
 
 
-const hamButton = document.querySelector('#menu-top');
-const navigation = document.querySelector('.menu-topo');
+// Botão Hamburger
+document.addEventListener("DOMContentLoaded", () => {
+	const hamButton = document.getElementById('menu-top');
+	const navigation = document.querySelector('.menu-topo');
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
+	hamButton.addEventListener('click', () => {
+		navigation.classList.toggle('active');
+		hamButton.classList.toggle('active');
+		});
+	});
