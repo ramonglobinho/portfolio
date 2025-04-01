@@ -130,6 +130,15 @@ h1{
     display: flex;
 }
 
+.alinha{
+    display: flex; 
+    justify-content: center;
+}
+
+.projetos{
+    padding: 20px;
+
+}
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
@@ -197,10 +206,6 @@ h1{
 
 }
 
-.projetos{
-    padding: 20px;
-
-}
 
 .scroll-margin {
     scroll-margin-top: 90px; /* Ajuste o valor conforme necessário */
