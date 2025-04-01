@@ -136,7 +136,8 @@ h1{
 }
 
 .projetos{
-    padding: 20px;
+  display: flex;
+  justify-content: center;
 
 }
 
