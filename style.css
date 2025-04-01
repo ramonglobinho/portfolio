@@ -133,7 +133,7 @@ h1{
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
-    
+
     h1 {
 		font-size: 2.5rem;
 		margin-left: 0;
@@ -162,9 +162,6 @@ h1{
         width: 100%;
         border-top: 20px solid white;
         margin-top: 0;
-        
-
-    
     }
 
 	.menu-topo a {
@@ -198,4 +195,13 @@ h1{
 
     }
 
+}
+
+.projetos{
+    padding: 20px;
+
+}
+
+.scroll-margin {
+    scroll-margin-top: 90px; /* Ajuste o valor conforme necessário */
 }
