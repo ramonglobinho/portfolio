@@ -408,3 +408,62 @@ footer {
     height: 100%;
     color: inherit;
 }
+
+/* Adicionar após a seção de certificações */
+.aulas-remotas {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.servico-educacional {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servico-educacional h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.beneficios-aulas h4 {
+    color: var(--primary-color);
+    margin: 20px 0 10px;
+}
+
+.beneficios-aulas ul {
+    list-style-type: none;
+}
+
+.beneficios-aulas li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.beneficios-aulas li::before {
+    content: "✓";
+    color: var(--secondary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.disponibilidade {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-style: italic;
+}
+
+/* Atualizar o menu de navegação */
+.menu-topo div:nth-child(5) {
+    order: 6; /* Mover Certificações para depois de Aulas */
+}
+
+.menu-topo div:nth-child(6) {
+    order: 5; /* Mover Aulas para antes de Certificações */
+}
