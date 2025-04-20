@@ -1,69 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="Portfólio" content="Portfólio do Dev Ramon Nascimento.">
-        <meta name="robots" content="noindex, nofollow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Portfólio Ramon Nascimento</title>
-        <meta name="Portfólio" content="Portfólio do Dev Ramon Nascimento.">
-    </head>
-    <body>
-        <div style="text-align: right;">
-            <div class="menu_topo"><a href="#quem_sou"> Quem sou </a></div>
-            <div  class="menu_topo"> <a href="#habilidades_desenvolvidas">Habilidades Desenvolvidas</a> </div>
-            <div  class="menu_topo"> <a href="#certificacoes">Certificações</a> </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfólio profissional de Ramon Nascimento, desenvolvedor Full Stack e analista de dados">
+    <meta name="keywords" content="Portfólio, Desenvolvedor, Full Stack, Análise de Dados, Ramon Nascimento">
+    <meta name="author" content="Ramon Nascimento">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio | Ramon Nascimento - Desenvolvedor Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <button type="button" id="menu-top" aria-label="Menu principal"></button>
+        <div class="menu-topo">
+            <div><a href="#quem_sou">Quem sou</a></div>
+            <div><a href="#habilidades_desenvolvidas">Habilidades</a></div>
+            <div><a href="#projetos">Projetos</a></div>
+            <div><a href="#certificacoes">Certificações</a></div>
+            <div><a href="#contato">Contato</a></div>
+            <div><a href="#aulas">Aulas</a></div>
+            
         </div>
-        <div class="principal" id="quem_sou">
-        <h1><center>Ramon  Nascimento</center></h1>
-        <center><img src="IMG/ramon.png" width="20%"></center>
-            <p>
-                Olá! Meu nome é Ramon Nascimento, tenho 30 anos e sou formado em <b>Física pelo Instituto Federal da Paraíba</b> e em <b>Matemática pela Universidade Norte do Paraná</b>. Minha paixão por ciência e tecnologia me levou a explorar diversas áreas do conhecimento, e foi assim que descobri o mundo da programação e da análise de dados. Atualmente, estou me especializando em desenvolvimento Full Stack, com foco em Front-End, aplicando as minhas habilidades analíticas e o meu entusiasmo por experiências digitais interativas.
-Além disso, estou cursando <b>Software Development na Brigham Young University - Idaho</b>, o que me proporciona uma visão mais ampla e aprofundada sobre engenharia de software e melhores práticas no desenvolvimento de sistemas. No meu portfólio, você encontrará projetos que refletem a combinação das minhas habilidades em programação, análise de dados e uma abordagem lógica adquirida ao longo da minha formação em ciências exatas.
-Estou sempre em busca de novos desafios e oportunidades para aplicar e expandir meus conhecimentos, criando soluções inovadoras e eficientes.
-            </p>
-        </div>
-        <div class="divisao" style="height: 15px" id="habilidades_desenvolvidas">
+    </header>
+
+    <main>
+        <section class="hero scroll-anim">
+            <h1>Ramon Nascimento</h1>
+            <p class="subtitle">Desenvolvedor Full Stack | Analista de Dados | Professor</p>
+        </section>
+
+        <section class="principal scroll-margin scroll-anim" id="quem_sou">
+            <img src="IMG/ramon.png" alt="Foto de Ramon Nascimento, desenvolvedor">
+            <div class="bio">
+                <h2>Sobre mim</h2>
+                <p>
+                    Sou formado em Física pelo <strong>Instituto Federal da Paraíba</strong> e licenciado em matemática pela <strong>Universidade Norte do Paraná</strong>. Atualmente, sou estudante de Software Development na <strong>Brigham Young University - Idaho</strong>, onde me aprofundo em engenharia de software e em melhores práticas em desenvolvimento de sistemas.
+                </p>
+                <p>
+                    Minha trajetória une educação, ciência de dados e desenvolvimento Full Stack, com ênfase em tecnologias de Front-End. Tenho me dedicado à criação de soluções digitais que aliem solidez conceitual e experiência interativa, combinando pensamento analítico e criatividade aplicada.
+                </p>
+                <p>
+                    Meus interesses de atuação incluem o ensino de ciências exatas, o desenvolvimento de aplicações web e a análise de dados. Tenho particular interesse em explorar a interface entre tecnologia e educação, utilizando programação como ferramenta para ampliar o acesso ao conhecimento e tomar decisões baseadas em dados.
+                </p>
+            </div>
+        </section>
+
+        <section class="divisao scroll-margin scroll-anim" id="habilidades_desenvolvidas">
             <h2>Habilidades Desenvolvidas</h2> 
-        </div>    
-        <div class="principal lista_horizontal">
-            <ul><h3>HTML</h3>
-                <li>Introdução</li>
-                <li>Tags Básicas</li>
-                <li>Meta Tags</li>
-                <li>Listas</li>
-            </ul>
-            <ul><h3>CSS</h3>
-                <li>Propriedades</li>
-                <li>Seletores</li>
-                <li>background</li>
-                <li>Caixas (Box Model)</li>
-            </ul>
-            <ul><h3>Análise de Dados</h3>
-                <li>Excel</li>
-                <li>Power BI</li>
-                <li>SQL</li>
-                <li>BigQuery</li>
-                <li>Python</li>
-            </ul>
-        </div>
-        <div class="divisao" style="height: 15px" id="certificacoes">
+        </section>    
+
+        <section class="habilidades scroll-anim">
+            <div class="skill-category">
+                <h3>Front-End</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React (em aprendizado)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Back-End</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Node.js (básico)</li>
+                    
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Análise de Dados</h3>
+                <ul>
+                    <li>Excel</li>
+                    <li>Power BI</li>
+                    <li>SQL</li>
+                    <li>BigQuery</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Outras</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Metodologias Ágeis</li>
+                    <li>Resolução de Problemas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="divisao scroll-margin scroll-anim" id="projetos">
+            <h2>Projetos</h2> 
+        </section> 
+
+        <section class="projetos-container scroll-anim">
+            <article class="projeto-card">
+                <a href="https://ramonglobinho.github.io/site-hospedagem/" target="_blank" rel="noopener noreferrer">
+                    <div class="projeto-imagem-container logo-ajustada">
+                        <img src="IMG/logo-icone.png" alt="Projeto NeoTech - site de hospedagem" class="projeto-logo">
+                    </div>
+                    <h3>NeoTech</h3>
+                    <p>Site de hospedagem desenvolvido com HTML e CSS</p>
+                </a>
+            </article>
+            
+
+            <article class="projeto-card placeholder">
+                <h3>Novo projeto em breve</h3>
+                <p>Estou trabalhando em novos projetos que serão adicionados aqui em breve.</p>
+            </article>
+        </section>
+
+        <section class="divisao scroll-margin scroll-anim" id="certificacoes">
             <h2>Certificações</h2> 
-        </div> 
-        <div style="display: flex; justify-content: center;">
-            <img src="IMG/ifpb.png" style="object-fit: contain; margin-right: 50px;" width="15%" >
-            <img src="IMG/unopar_logo.png" style="object-fit: contain;" width="20%">
-            <img src="IMG/byu_logo.png" style="object-fit: contain;" width="20%">
+        </section> 
+
+        <section class="certificacoes scroll-anim">
+            <div class="certificado-item">
+                <div class="certificado-logo">
+                    <img src="IMG/ifpb.png" alt="Logo do Instituto Federal da Paraíba">
+                </div>
+                <div class="certificado-info">
+                    <h3>Licenciatura em Física</h3>
+                    <p>Instituto Federal da Paraíba</p>
+                </div>
+            </div>
+
+            <div class="certificado-item">
+                <div class="certificado-logo">
+                    <img src="IMG/unopar_logo.png" alt="Logo da Universidade Norte do Paraná">
+                </div>
+                <div class="certificado-info">
+                    <h3>Licenciatura em Matemática</h3>
+                    <p>Universidade Norte do Paraná</p>
+                </div>
+            </div>
+
+            <div class="certificado-item">
+                <div class="certificado-logo">
+                    <img src="IMG/byu_logo.png" alt="Logo da Brigham Young University - Idaho">
+                </div>
+                <div class="certificado-info">
+                    <h3>Software Development</h3>
+                    <p>Brigham Young University - Idaho (cursando)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="divisao scroll-margin scroll-anim" id="aulas">
+            <h2>Aulas Remotas</h2>
+        </section>
+        
+        <section class="aulas-remotas scroll-anim">
+            <div class="servico-educacional">
+                <h3>Aulas de Física e Matemática</h3>
+                <p>Ofereço aulas particulares remotas para estudantes do ensino fundamental e médio, com abordagem pedagógica adaptada às necessidades individuais.</p>
+                
+                <div class="beneficios-aulas">
+                    <h4>Como funcionam:</h4>
+                    <ul>
+                        <li>Aulas 100% online via plataforma de videoconferência</li>
+                        <li>Horários flexíveis conforme disponibilidade</li>
+                        <li>Material didático personalizado</li>
+                        <li>Foco nas dificuldades específicas do aluno</li>
+                        <li>Resolução de dúvidas e reforço escolar</li>
+                    </ul>
+                </div>
+                
+                <div class="disponibilidade">
+                    <p><strong>Disponibilidade limitada</strong> - Vagas sujeitas à confirmação de horário.</p>
+                    <p>Entre em contato para mais informações e agendamento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato scroll-margin scroll-anim" id="contato">
+            <h2>Contato</h2>
+            <div class="contato-info">
+                <p>Interessado em trabalhar comigo ou saber mais sobre meus projetos?</p>
+                <div class="contato-links">
+                    <a href="https://www.linkedin.com/in/mramon-nascimento" target="_blank" rel="noopener noreferrer">
+                        <img src="IMG/linkedin.png" alt="LinkedIn Ramon Nascimento" width="40">
+                        LinkedIn
+                    </a>
+                    <a href="http://lattes.cnpq.br/2705086326215221" target="_blank" rel="noopener noreferrer">
+                        <img src="IMG/lates.png" alt="Currículo Lattes Ramon Nascimento" width="40">
+                        Currículo Lattes
+                    </a>
+                    <!--<a href="https://wa.me/SEUNUMERODEWHATSAPP" target="_blank" rel="noopener noreferrer">
+                        <img src="IMG/whatsapp.svg" alt="WhatsApp Ramon Nascimento" width="35">
+                        WhatsApp
+                    </a>-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Ramon Nascimento. Todos os direitos reservados.</p>
+            <div class="modific">
+                Última atualização: <span id="data"></span>
+            </div>
         </div>
-
-
-        <div>
-            <center>
-            <a href="https://www.linkedin.com/in/mramon-nascimento"><img src="IMG/linkedin.png" width="5%"></a>
-            <a href="http://lattes.cnpq.br/2705086326215221"><img src="IMG/lates.png" width="5%"></a>
-            </center>
-        </div>
-
-    </body>
+    </footer>
+</body>
 </html>
